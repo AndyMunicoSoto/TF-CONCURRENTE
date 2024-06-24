@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server-node1:
+    image: nombre_imagen_servidor_node1:latest
+    ports:
+      - "8000:8000"
+    restart: always  # Configuración para reiniciar siempre el contenedor en caso de fallo
+
+  server-node2:
+    image: nombre_imagen_servidor_node2:latest
+    ports:
+      - "8001:8000"
+    restart: always  # Configuración para reiniciar siempre el contenedor en caso de fallo
